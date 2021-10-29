@@ -54,6 +54,12 @@ ui <- fluidPage(
 	
 		# Main panel for displaying outputs ----
 		mainPanel(
+			# Formatted Text for explanation & Citation information
+			strong("Citation:"), 
+			"Andrews, T.S.*, Atif, J.* Liu, J.C.*, Perciani, C.T., Ma, X.Z., Thoeni, C., Slyper, M., Eraslan, G., Segerstolpe, A., Manuel, J., Chung, S., Winter, E., Cirlan, I., Khuu, N., Fischer, S., Rozenblatt-Rosen, O., Regev, A., McGilvray, I.E., Bader, G.D., MacParland, S.A.,", 
+			"(2021)", em("Hepatology Communications."), strong("doi :"), "10.1002/hep4.1854",
+			tags$a(href="https://doi.org/10.1002/hep4.1854", "Link to Paper"),
+
 
 			# Output: SpatialFeaturePlot
 			plotOutput(outputId = "sptFeaturePlot")
